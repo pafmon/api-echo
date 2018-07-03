@@ -1,3 +1,8 @@
 # An API echo app based on socket.io
 
-See it live at: https://api-echo.herokuapp.com/ 
+Live DEMO: 
+  1) Open a tab : https://api-echo.herokuapp.com/ 
+  2) Open a second tab : https://api-echo.herokuapp.com/echo/myapi/request/test?withpartams=true
+  3) refresh the second tab
+
+For a more complex demo, try [postman](https://www.getpostman.com/) and send different requests to https://api-echo.herokuapp.com/echo/...
