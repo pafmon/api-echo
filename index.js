@@ -1,10 +1,12 @@
 var app = require('express')();
 var bodyParser = require('body-parser');
+var cors = require('cors');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
+app.use(cors());
 
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
